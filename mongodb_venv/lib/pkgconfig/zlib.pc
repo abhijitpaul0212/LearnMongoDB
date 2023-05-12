@@ -1,0 +1,13 @@
+prefix=/Users/abhijitpaul/Documents/Personal/Learning/iNeuronMLProjects/MongoDB/mongodb_venv
+exec_prefix=/Users/abhijitpaul/Documents/Personal/Learning/iNeuronMLProjects/MongoDB/mongodb_venv
+libdir=/Users/abhijitpaul/Documents/Personal/Learning/iNeuronMLProjects/MongoDB/mongodb_venv/lib
+sharedlibdir=/Users/abhijitpaul/Documents/Personal/Learning/iNeuronMLProjects/MongoDB/mongodb_venv/lib
+includedir=/Users/abhijitpaul/Documents/Personal/Learning/iNeuronMLProjects/MongoDB/mongodb_venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}
