@@ -6,9 +6,9 @@ uri = "mongodb+srv://root:root@cluster0.k3s4vuf.mongodb.net/?retryWrites=true&w=
 client = MongoClient(uri)
 
 data = {
-    "name": "mousumi",
-    "email": "mousumipaul0103@gmail.com",
-    "surname": "paul"
+    "name": "bishal",
+    "email": "bishalranjandey@gmail.com",
+    "surname": "dey"
     }
 
 # Send a ping to confirm a successful connection
