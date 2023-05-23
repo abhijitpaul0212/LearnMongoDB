@@ -57,22 +57,46 @@
 ## Use Mongosh to create Database & Collections
 * show databases
 * use forum
-* db.createCollection(<"name">)
+* db.createCollection('posts')
 * show collections
 <img width="576" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/e89cbe7d-872a-467b-a0af-28ab56eb60b1">
 
 * create a JSON object for a document, say doc1={postId: NumberInt(3511),shared: false};, doc2={postId: NumberInt(3511),shared: false};
 * db.posts.insertOne(doc1)
 * db.posts.insertMany([doc1, doc2])
-
 <img width="631" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/36a7ce87-3438-42a6-a77d-266eb03b2f18">
 
+* db.getCollection('posts').find({})
+* db.getCollection('posts').findOne({postId: 3015})
+<img width="690" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/0825134f-bf9d-4922-bd4f-1976ab0dce49">
+
+* db.getCollection('posts').find({"author.name": "Emily Watson"})
+* db.getCollection('posts').find({tags: "programming"})
+<img width="772" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/4fe18162-ca49-483f-bd26-c068c5090b45">
 
 
+## Query Operators
+* $or
+* $and
+* $eq
+* $ne
+* $lt
+* $gt
+* $in
+* $nin
+* $regex
 
+* db.getCollection('posts').find({comments: {$gt: 0}})
+* db.getCollection('posts').find({$and: [{comments: {$lt: 5}}, {comments: {$gt: 0}}]})
+* db.getCollection('posts').find({ tags: {$in: ["programming", "coding"]}})
+<img width="772" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/a4ca9391-6469-4d13-9832-b46555743a07">
 
+## Helper Methods
+* sort() --> db.getCollection('posts').find({}).sort({comments: 1})
+* limit() --> db.getCollection('posts').find({}).limit(2)
+* skip() --> db.getCollection('posts').find({}).skip(3)
 
-
+![image](https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/af637c46-474b-4c15-a3a8-6e9dfc6d2e86)
 
 
 
