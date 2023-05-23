@@ -34,6 +34,18 @@
 ![image](https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/1a62995c-8c25-4475-94f3-c88640ec6c98)
 
 
+## MacOS 
+### Launch Terminal
+* Intall MongoDB CLI using > brew install mongodb-atlas
+* Run > atlas auth login 
+* Provide the auth-key for Atlas User authentication using the Atalas Cloud account
+* Run > atlas. (The response includes available commands and options for the Atlas CLI)
+
+
+## To view list of Atlas Cluster
+> atlas cluster list
+
+
 
 
 
