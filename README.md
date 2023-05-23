@@ -4,14 +4,16 @@
 * MongoDB is a source-available cross-platform document-oriented database program.
 * Classified as a NoSQL database program, MongoDB uses JSON-like documents with optional schemas.
 
-## Features
 
+## Features
 * MongoDB uses Mozilla's SpiderMonkey JavaScript Engine
 * MongoDB is a document based database which is different from relational database.
 * Database has Collections (i.e Tables)
 * Collections contains Documents (i.e Records)
-* Documents in Database are stored in BSON format i.e. Binary JSON
+* Documents in Database are stored in BSON format 
+* Binary JSON (BSON) data type is the binary representation of a JSON data type format for serializing JSON documents
 * Extended JSON is used to represent/read BSON data types
+
 
 ## Types of Databases
 1. Relational:
@@ -24,12 +26,13 @@
     * Its not mandatyory to have same schema for all documents
 
 
-## JSON
-![image](https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/6595a762-a73e-4b30-9530-d3e188c126a4)
+## JSON data Type
+![image](https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/185e81b8-9684-455e-8426-73e848a4a5d4)
 
 
-## BSON
-![image](https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/bbc8581a-b200-490c-9597-b89137b3bfd9)
+## BSON data Type
+![image](https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/1a62995c-8c25-4475-94f3-c88640ec6c98)
+
 
 
 
