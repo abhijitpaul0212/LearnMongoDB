@@ -12,3 +12,7 @@ Types of Databases:
     a) NoSQL DB
     b) Data is stored in documents.
     c) Its not mandatyory to have same schema for all documents
+
+
+Database has Collections (DB Tables)
+Collections contains Documents (Data Records)
