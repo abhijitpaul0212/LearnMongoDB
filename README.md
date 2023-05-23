@@ -36,14 +36,39 @@
 
 ## MacOS 
 ### Launch Terminal
-* Intall MongoDB CLI using > brew install mongodb-atlas
-* Run > atlas auth login 
+* Intall MongoDB CLI using --> brew install mongodb-atlas
+* Run --> atlas auth login 
 * Provide the auth-key for Atlas User authentication using the Atalas Cloud account
-* Run > atlas. (The response includes available commands and options for the Atlas CLI)
+* Run --> atlas. (The response includes available commands and options for the Atlas CLI)
 
 
 ## To view list of Atlas Cluster
-> atlas cluster list
+* atlas cluster list
+
+## To view the connection String
+* atlas clusters connectionStrings describe Cluster0
+
+## Installed Mongosh
+1. Open .zshrc file nano $HOME/.zshrc
+2. You will see the commented $PATH variable here
+3. export PATH=$HOME/bin:/usr/local/bin:/Users/ebin/Documents/Softwares/mongoDB/bin:$PATH
+4. Activate the change source $HOME/.zshrc
+
+## Use Mongosh to create Database & Collections
+* show databases
+* use forum
+* db.createCollection(<"name">)
+* show collections
+<img width="576" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/e89cbe7d-872a-467b-a0af-28ab56eb60b1">
+
+* create a JSON object for a document, say doc1={postId: NumberInt(3511),shared: false};, doc2={postId: NumberInt(3511),shared: false};
+* db.posts.insertOne(doc1)
+* db.posts.insertMany([doc1, doc2])
+
+<img width="631" alt="image" src="https://github.com/abhijitpaul0212/LearnMongoDB/assets/9966441/36a7ce87-3438-42a6-a77d-266eb03b2f18">
+
+
+
 
 
 
